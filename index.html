@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+ * @author Goldstein Systems LTD
+ * @license MIT
+ *
+ * This software is licensed under the MIT License. See the LICENSE file for details.
+ *
+ * Culture Owl Interactive Map Interface
+ * A web-based interactive map system for exploring cultural locations
+-->
+    <title>Culture Owl</title>
+    <meta name="theme-color" content="#373939">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/apple-touch-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" type="image/png" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon-57x57.png">
+    <meta name="msapplication-TileImage" content="/images/apple-touch-icon-57x57.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="map-container">
+        <div id="sidebar">
+            <img src="/images/logo-white-horizontal.png" style="width: 200px; margin-bottom: 0px;">
+            <button id="toggle-sidebar" title="Toggle Sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search Venue by Name">
+                <svg class="search-icon clear-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </div>
+            <div class="search-results"></div>
+            <div id="categories-list">
+                <!-- Categories will be added here by JavaScript -->
+
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtg7hZQuySKZT3Vd_xqDvW5YbTcEZAk-o&callback=initMap">
+    </script>
+</body>
+</html>
+
+
+
