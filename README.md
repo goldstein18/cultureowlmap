@@ -33,7 +33,7 @@ culture-owl-map/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/goldstein18/cultureowl2.git
+git clone https://github.com/goldstein18/cultureowlmap.git
 ```
 
 
